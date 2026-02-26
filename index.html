@@ -16,7 +16,7 @@
         .font-mono {
             font-family: 'JetBrains Mono', monospace;
         }
-        
+
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
@@ -103,6 +103,12 @@
             background: #3b82f6;
             color: white;
         }
+
+        /* Filter Buttons */
+        .filter-btn.active {
+            background: #3b82f6;
+            color: white;
+        }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-100 antialiased overflow-x-hidden">
@@ -117,7 +123,7 @@
                     </div>
                     <span class="font-bold text-xl tracking-tight">Ayyan Khan</span>
                 </div>
-                
+
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#about" class="hover:text-blue-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
@@ -192,11 +198,11 @@
                     <div class="text-sm text-slate-400 mt-1">Years Experience</div>
                 </div>
                 <div class="p-4 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-                    <div class="text-3xl font-bold text-purple-400">10+</div>
+                    <div class="text-3xl font-bold text-purple-400">52+</div>
                     <div class="text-sm text-slate-400 mt-1">Projects</div>
                 </div>
                 <div class="p-4 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-                    <div class="text-3xl font-bold text-pink-400">5+</div>
+                    <div class="text-3xl font-bold text-pink-400">10+</div>
                     <div class="text-sm text-slate-400 mt-1">Technologies</div>
                 </div>
                 <div class="p-4 rounded-2xl bg-slate-800/30 border border-slate-700/50">
@@ -222,16 +228,16 @@
                     </h2>
                     <div class="space-y-4 text-slate-400 leading-relaxed">
                         <p>
-                            I'm a passionate Data Analyst and Developer specializing in transforming complex datasets into actionable insights. With expertise in Python, data visualization, and API integration, I build solutions that make data meaningful.
+                            I'm a passionate Data Analyst and Developer specializing in transforming complex datasets into actionable insights. With expertise in Python, Rust, C++, data visualization, and API integration, I build solutions that make data meaningful.
                         </p>
                         <p>
-                            My recent work includes the <strong class="text-slate-200">Asia Weather Data Analysis</strong> project, where I developed automated pipelines to fetch, process, and visualize weather data from major Asian cities using OpenWeatherMap API.
+                            My portfolio includes 52+ projects spanning data analysis, machine learning, web development, and systems programming. From weather data pipelines to AI-driven financial analysis, I tackle diverse challenges with clean, efficient code.
                         </p>
                         <p>
                             I believe in clean code, continuous learning, and creating tools that solve real-world problems through data-driven approaches.
                         </p>
                     </div>
-                    
+
                     <div class="mt-8 flex gap-4">
                         <div class="flex items-center gap-2 text-sm text-slate-400">
                             <i data-lucide="map-pin" class="w-4 h-4 text-blue-500"></i>
@@ -253,10 +259,10 @@
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold">Ayyan Khan</h3>
-                                <p class="text-slate-400">Data Analyst</p>
+                                <p class="text-slate-400">Data Analyst & Developer</p>
                             </div>
                         </div>
-                        
+
                         <div class="space-y-4 font-mono text-sm">
                             <div class="flex justify-between border-b border-slate-700 pb-2">
                                 <span class="text-slate-500">Location:</span>
@@ -264,11 +270,11 @@
                             </div>
                             <div class="flex justify-between border-b border-slate-700 pb-2">
                                 <span class="text-slate-500">Focus:</span>
-                                <span class="text-slate-300">Data Analysis & Visualization</span>
+                                <span class="text-slate-300">Data Analysis, ML & Web Dev</span>
                             </div>
                             <div class="flex justify-between border-b border-slate-700 pb-2">
-                                <span class="text-slate-500">Interests:</span>
-                                <span class="text-slate-300">Weather Data, APIs, Python</span>
+                                <span class="text-slate-500">Languages:</span>
+                                <span class="text-slate-300">Python, Rust, C++, JavaScript</span>
                             </div>
                             <div class="flex justify-between">
                                 <span class="text-slate-500">Status:</span>
@@ -302,9 +308,9 @@
                         </div>
                     </div>
                     <div class="w-full bg-slate-800 rounded-full h-2 mb-2">
-                        <div class="bg-blue-500 h-2 rounded-full skill-fill" style="width: 90%"></div>
+                        <div class="bg-blue-500 h-2 rounded-full skill-fill" style="width: 92%"></div>
                     </div>
-                    <p class="text-sm text-slate-400">Pandas, NumPy, Matplotlib, Jupyter</p>
+                    <p class="text-sm text-slate-400">Pandas, NumPy, Matplotlib, Scikit-learn, Streamlit</p>
                 </div>
 
                 <!-- Data Analysis -->
@@ -319,26 +325,60 @@
                         </div>
                     </div>
                     <div class="w-full bg-slate-800 rounded-full h-2 mb-2">
-                        <div class="bg-purple-500 h-2 rounded-full skill-fill" style="width: 85%"></div>
+                        <div class="bg-purple-500 h-2 rounded-full skill-fill" style="width: 90%"></div>
                     </div>
-                    <p class="text-sm text-slate-400">Statistical Analysis, Data Cleaning, EDA</p>
+                    <p class="text-sm text-slate-400">Statistical Analysis, Data Cleaning, EDA, NLP</p>
                 </div>
 
-                <!-- APIs -->
+                <!-- Machine Learning -->
                 <div class="group p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-green-500/50 transition-all reveal">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i data-lucide="cloud" class="w-6 h-6 text-green-500"></i>
+                            <i data-lucide="brain" class="w-6 h-6 text-green-500"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">API Integration</h3>
-                            <p class="text-sm text-slate-500">Data Sources</p>
+                            <h3 class="font-bold text-lg">Machine Learning</h3>
+                            <p class="text-sm text-slate-500">Predictive Modeling</p>
                         </div>
                     </div>
                     <div class="w-full bg-slate-800 rounded-full h-2 mb-2">
-                        <div class="bg-green-500 h-2 rounded-full skill-fill" style="width: 80%"></div>
+                        <div class="bg-green-500 h-2 rounded-full skill-fill" style="width: 85%"></div>
                     </div>
-                    <p class="text-sm text-slate-400">REST APIs, OpenWeatherMap, Data Fetching</p>
+                    <p class="text-sm text-slate-400">Classification, Clustering, Regression, MLflow, DVC</p>
+                </div>
+
+                <!-- Rust -->
+                <div class="group p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-orange-500/50 transition-all reveal">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-orange-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i data-lucide="cpu" class="w-6 h-6 text-orange-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Rust</h3>
+                            <p class="text-sm text-slate-500">Systems Programming</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2 mb-2">
+                        <div class="bg-orange-500 h-2 rounded-full skill-fill" style="width: 75%"></div>
+                    </div>
+                    <p class="text-sm text-slate-400">Safe, performant systems-level code</p>
+                </div>
+
+                <!-- C++ -->
+                <div class="group p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-red-500/50 transition-all reveal">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i data-lucide="layers" class="w-6 h-6 text-red-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">C++</h3>
+                            <p class="text-sm text-slate-500">Performance Computing</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2 mb-2">
+                        <div class="bg-red-500 h-2 rounded-full skill-fill" style="width: 80%"></div>
+                    </div>
+                    <p class="text-sm text-slate-400">Algorithms, Systems Programming, GUI Apps</p>
                 </div>
 
                 <!-- Visualization -->
@@ -353,16 +393,16 @@
                         </div>
                     </div>
                     <div class="w-full bg-slate-800 rounded-full h-2 mb-2">
-                        <div class="bg-pink-500 h-2 rounded-full skill-fill" style="width: 85%"></div>
+                        <div class="bg-pink-500 h-2 rounded-full skill-fill" style="width: 88%"></div>
                     </div>
-                    <p class="text-sm text-slate-400">Matplotlib, Seaborn, Interactive Charts</p>
+                    <p class="text-sm text-slate-400">Matplotlib, Seaborn, Plotly, Interactive Dashboards</p>
                 </div>
 
                 <!-- Jupyter -->
-                <div class="group p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-orange-500/50 transition-all reveal">
+                <div class="group p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-yellow-500/50 transition-all reveal">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 rounded-lg bg-orange-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i data-lucide="book-open" class="w-6 h-6 text-orange-500"></i>
+                        <div class="w-12 h-12 rounded-lg bg-yellow-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i data-lucide="book-open" class="w-6 h-6 text-yellow-500"></i>
                         </div>
                         <div>
                             <h3 class="font-bold text-lg">Jupyter Notebook</h3>
@@ -370,26 +410,43 @@
                         </div>
                     </div>
                     <div class="w-full bg-slate-800 rounded-full h-2 mb-2">
-                        <div class="bg-orange-500 h-2 rounded-full skill-fill" style="width: 88%"></div>
+                        <div class="bg-yellow-500 h-2 rounded-full skill-fill" style="width: 95%"></div>
                     </div>
-                    <p class="text-sm text-slate-400">Interactive Computing, Documentation</p>
+                    <p class="text-sm text-slate-400">Interactive Computing, Documentation, Analysis</p>
                 </div>
 
-                <!-- Git -->
-                <div class="group p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-red-500/50 transition-all reveal">
+                <!-- Web Development -->
+                <div class="group p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all reveal">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i data-lucide="git-branch" class="w-6 h-6 text-red-500"></i>
+                        <div class="w-12 h-12 rounded-lg bg-cyan-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i data-lucide="globe" class="w-6 h-6 text-cyan-500"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Version Control</h3>
+                            <h3 class="font-bold text-lg">Web Development</h3>
+                            <p class="text-sm text-slate-500">Full Stack</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2 mb-2">
+                        <div class="bg-cyan-500 h-2 rounded-full skill-fill" style="width: 78%"></div>
+                    </div>
+                    <p class="text-sm text-slate-400">HTML, CSS, JavaScript, Tailwind CSS, React</p>
+                </div>
+
+                <!-- Git & DevOps -->
+                <div class="group p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-all reveal">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-indigo-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i data-lucide="git-branch" class="w-6 h-6 text-indigo-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Git & DevOps</h3>
                             <p class="text-sm text-slate-500">Collaboration</p>
                         </div>
                     </div>
                     <div class="w-full bg-slate-800 rounded-full h-2 mb-2">
-                        <div class="bg-red-500 h-2 rounded-full skill-fill" style="width: 82%"></div>
+                        <div class="bg-indigo-500 h-2 rounded-full skill-fill" style="width: 85%"></div>
                     </div>
-                    <p class="text-sm text-slate-400">Git, GitHub, Project Management</p>
+                    <p class="text-sm text-slate-400">Git, GitHub, CI/CD, Docker, MLOps</p>
                 </div>
             </div>
         </div>
@@ -400,55 +457,638 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured <span class="text-blue-500">Projects</span></h2>
-                <p class="text-slate-400 max-w-2xl mx-auto">Recent work showcasing data analysis and visualization capabilities</p>
+                <p class="text-slate-400 max-w-2xl mx-auto">A selection of 52+ projects showcasing data analysis, machine learning, and development capabilities</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project 1: Weather Analysis -->
-                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal">
-                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <div class="p-8">
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
+                <button class="filter-btn active px-4 py-2 rounded-full text-sm font-medium bg-slate-800 hover:bg-slate-700 transition-all" data-filter="all">All</button>
+                <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-slate-800 hover:bg-slate-700 transition-all" data-filter="data">Data Analysis</button>
+                <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-slate-800 hover:bg-slate-700 transition-all" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-slate-800 hover:bg-slate-700 transition-all" data-filter="dev">Development</button>
+                <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-slate-800 hover:bg-slate-700 transition-all" data-filter="ai">AI/LLM</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Data Analysis Projects -->
+                
+                <!-- Project: Music Popularity Analysis -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="data">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-600/20 to-emerald-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
-                            <div class="w-14 h-14 rounded-xl bg-blue-500/10 flex items-center justify-center">
-                                <i data-lucide="cloud-sun" class="w-7 h-7 text-blue-400"></i>
+                            <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center">
+                                <i data-lucide="music" class="w-6 h-6 text-green-400"></i>
                             </div>
-                            <div class="flex gap-2">
-                                <span class="px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20">Python</span>
-                                <span class="px-3 py-1 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20">API</span>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-2xl font-bold mb-3 group-hover:text-blue-400 transition-colors">Asia Weather Data Analysis</h3>
-                        <p class="text-slate-400 mb-6 leading-relaxed">
-                            Automated weather data pipeline fetching real-time data from major Asian cities using OpenWeatherMap API. Features data cleaning, statistical analysis, and interactive visualizations.
-                        </p>
-                        
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="text-xs text-slate-500 flex items-center gap-1"><i data-lucide="check" class="w-3 h-3"></i> Pandas</span>
-                            <span class="text-xs text-slate-500 flex items-center gap-1"><i data-lucide="check" class="w-3 h-3"></i> Matplotlib</span>
-                            <span class="text-xs text-slate-500 flex items-center gap-1"><i data-lucide="check" class="w-3 h-3"></i> Jupyter</span>
-                            <span class="text-xs text-slate-500 flex items-center gap-1"><i data-lucide="check" class="w-3 h-3"></i> REST API</span>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 border border-green-500/20">Jupyter</span>
                         </div>
 
-                        <div class="flex gap-4">
-                            <a href="https://github.com/Ayyankhan101/Aisa-Weather-Data-Analysis-2025" target="_blank" class="flex-1 py-3 rounded-lg bg-slate-700 hover:bg-slate-600 text-center text-sm font-medium transition-colors flex items-center justify-center gap-2">
-                                <i data-lucide="github" class="w-4 h-4"></i> View Code
-                            </a>
-                            <a href="#" class="flex-1 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-center text-sm font-medium transition-colors flex items-center justify-center gap-2">
-                                <i data-lucide="external-link" class="w-4 h-4"></i> Live Demo
-                            </a>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-green-400 transition-colors">Music Popularity Analysis</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Deep dive into what makes a song popular with data cleaning, exploratory data analysis, and visualizations.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Python</span>
+                            <span class="text-xs text-slate-500">Pandas</span>
+                            <span class="text-xs text-slate-500">EDA</span>
                         </div>
+
+                        <a href="https://github.com/Ayyankhan101/Music-Popularity-Analysis" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 2: Placeholder for future -->
-                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 border-dashed reveal">
-                    <div class="p-8 flex flex-col items-center justify-center h-full text-center min-h-[400px]">
-                        <div class="w-16 h-16 rounded-full bg-slate-700/50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <i data-lucide="plus" class="w-8 h-8 text-slate-500"></i>
+                <!-- Project: Sales Data Analysis -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="data">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-cyan-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                                <i data-lucide="trending-up" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20">Jupyter</span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-400 mb-2">More Projects Coming</h3>
-                        <p class="text-slate-600 max-w-sm">Currently working on new data analysis projects. Check back soon or follow my GitHub for updates.</p>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">Sales Data Analysis</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Comprehensive analysis of sales data to extract meaningful insights and trends for business intelligence.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Python</span>
+                            <span class="text-xs text-slate-500">Analytics</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Sales_Data_Analysis" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: AI Task Analysis -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="data">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center">
+                                <i data-lucide="sparkles" class="w-6 h-6 text-purple-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20">Apache 2.0</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">AI Task Analysis</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Analyzes AI tasks using EDA, NLP, clustering, and classification techniques for predictive modeling.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">NLP</span>
+                            <span class="text-xs text-slate-500">Clustering</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/AI-Task-Analysis-Predictive-Modeling" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: YouTube vs Spotify Analysis -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="data">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-green-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center">
+                                <i data-lucide="youtube" class="w-6 h-6 text-red-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-red-500/10 text-red-400 border border-red-500/20">Apache 2.0</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-red-400 transition-colors">YouTube vs Spotify Analysis</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            In-depth analysis comparing music popularity and trends across Spotify and YouTube platforms.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Comparison</span>
+                            <span class="text-xs text-slate-500">Streaming</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/YouTube-vs-Spodify-Views-Analysis" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Amazon Bestsellers Analysis -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="data">
+                    <div class="absolute inset-0 bg-gradient-to-br from-yellow-600/20 to-orange-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-yellow-500/10 flex items-center justify-center">
+                                <i data-lucide="shopping-cart" class="w-6 h-6 text-yellow-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">Dashboard</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-yellow-400 transition-colors">Amazon Bestsellers 2025</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Analyzes Amazon bestsellers data with interactive dashboard for exploring book trends and ratings.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">E-commerce</span>
+                            <span class="text-xs text-slate-500">Dashboard</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Amazon-Bestsellers-Analysis-2025" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Weather Data Analysis -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="data">
+                    <div class="absolute inset-0 bg-gradient-to-br from-sky-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center">
+                                <i data-lucide="cloud-sun" class="w-6 h-6 text-sky-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-sky-500/10 text-sky-400 border border-sky-500/20">API</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-sky-400 transition-colors">Asia Weather Data Analysis</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Automated weather data pipeline fetching real-time data from major Asian cities using OpenWeatherMap API.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">REST API</span>
+                            <span class="text-xs text-slate-500">Automation</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Aisa-Weather-Data-Analysis-2025" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ML/AI Projects -->
+
+                <!-- Project: Housing Price ML Ops -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="ml">
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-600/20 to-teal-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+                                <i data-lucide="circle-help" class="w-6 h-6 text-emerald-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">MLOps</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">Housing Price ML Ops</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Production-ready ML pipeline for housing price prediction with MLflow, DVC, and Streamlit deployment.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">MLflow</span>
+                            <span class="text-xs text-slate-500">DVC</span>
+                            <span class="text-xs text-slate-500">Streamlit</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Housing-Price-ML-Ops" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Customer Churn Prediction -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="ml">
+                    <div class="absolute inset-0 bg-gradient-to-br from-rose-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center">
+                                <i data-lucide="user-x" class="w-6 h-6 text-rose-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-rose-500/10 text-rose-400 border border-rose-500/20">Streamlit</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-rose-400 transition-colors">Customer Churn Prediction</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Predicts customer churn with Streamlit web app and Jupyter notebook for business retention analysis.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Classification</span>
+                            <span class="text-xs text-slate-500">Web App</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Customer-Churn-Prediction" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Used Car Price Prediction -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="ml">
+                    <div class="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center">
+                                <i data-lucide="car" class="w-6 h-6 text-indigo-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Dashboard</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">Used Car Price Prediction</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Used car analysis with ML price prediction and interactive dashboard for market insights.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Regression</span>
+                            <span class="text-xs text-slate-500">Market Analysis</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Used-Car-Analysis-and-Price-Prediction-2025" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Stress Level Analysis -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="ml">
+                    <div class="absolute inset-0 bg-gradient-to-br from-violet-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center">
+                                <i data-lucide="heart-pulse" class="w-6 h-6 text-violet-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-violet-500/10 text-violet-400 border border-violet-500/20">Health</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-violet-400 transition-colors">Stress Level Analysis</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Analyzes and predicts stress levels using various personal and environmental factors.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Healthcare</span>
+                            <span class="text-xs text-slate-500">Prediction</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Stress-Level-Analysis" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: DNA Sequence Analysis -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="ml">
+                    <div class="absolute inset-0 bg-gradient-to-br from-cyan-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center">
+                                <i data-lucide="dna" class="w-6 h-6 text-cyan-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Bioinformatics</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Synthetic DNA Sequence Analysis</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Analyzes synthetic DNA sequences to predict mutations and classify sequences using ML.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Genomics</span>
+                            <span class="text-xs text-slate-500">Classification</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Synthetic-DNA-Sequence-Analysis" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Job Description vs Resume -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="ml">
+                    <div class="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-orange-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center">
+                                <i data-lucide="file-text" class="w-6 h-6 text-amber-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20">NLP</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-amber-400 transition-colors">Job Description vs Resume</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Comprehensive analysis for matching resumes to job descriptions using NLP techniques.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Text Matching</span>
+                            <span class="text-xs text-slate-500">HR Tech</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Job-Description-vs-Resume-Analysis" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Development Projects -->
+
+                <!-- Project: OpenFang -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="dev">
+                    <div class="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-red-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center">
+                                <i data-lucide="bot" class="w-6 h-6 text-orange-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-orange-500/10 text-orange-400 border border-orange-500/20">Apache 2.0</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-orange-400 transition-colors">OpenFang</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Open-source Agent Operating System. A powerful framework for building AI agent systems.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Rust</span>
+                            <span class="text-xs text-slate-500">AI Agents</span>
+                            <span class="text-xs text-slate-500">Framework</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/OpenFang" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: AI Database Communicator -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="dev">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-indigo-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                                <i data-lucide="database" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20">Rust</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">AI Database Communicator</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            AI-powered database communication tool built with Rust for safe and performant queries.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Rust</span>
+                            <span class="text-xs text-slate-500">Database</span>
+                            <span class="text-xs text-slate-500">AI</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/AI-Database-Communicator" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Database Lab -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="dev">
+                    <div class="absolute inset-0 bg-gradient-to-br from-teal-600/20 to-cyan-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center">
+                                <i data-lucide="server" class="w-6 h-6 text-teal-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-teal-500/10 text-teal-400 border border-teal-500/20">SQL</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-teal-400 transition-colors">Database Lab</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Comprehensive repository for Database Systems Laboratory featuring SQL scripts, schema designs, and documentation.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">SQL</span>
+                            <span class="text-xs text-slate-500">PostgreSQL</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Database-Lab" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: MLFQ Scheduling -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="dev">
+                    <div class="absolute inset-0 bg-gradient-to-br from-slate-600/20 to-gray-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-500/10 flex items-center justify-center">
+                                <i data-lucide="cpu" class="w-6 h-6 text-slate-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-slate-500/10 text-slate-400 border border-slate-500/20">MIT</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-slate-400 transition-colors">MLFQ Scheduling</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Multilevel Feedback Queue CPU Scheduler with Web GUI and Terminal Interface built in C++.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">C++</span>
+                            <span class="text-xs text-slate-500">OS</span>
+                            <span class="text-xs text-slate-500">Web GUI</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/MLFQ-Scheduling" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Text-Based Game -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="dev">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-600/20 to-emerald-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center">
+                                <i data-lucide="gamepad-2" class="w-6 h-6 text-green-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 border border-green-500/20">Game</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-green-400 transition-colors">Wolf Pack Survival</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Wolf Pack Survival Adventure text-based game with immersive gameplay mechanics.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">C++</span>
+                            <span class="text-xs text-slate-500">Game Dev</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Text-Based-Game" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Multi-Algo Analysis -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="dev">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center">
+                                <i data-lucide="activity" class="w-6 h-6 text-purple-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20">C++</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">Multi-Algo Analysis</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            C++ application with multiple algorithms and comprehensive resource monitoring capabilities.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Algorithms</span>
+                            <span class="text-xs text-slate-500">Monitoring</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Multi-Algo-Analysis" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AI/LLM Projects -->
+
+                <!-- Project: Recursive Language Models -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="ai">
+                    <div class="absolute inset-0 bg-gradient-to-br from-violet-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center">
+                                <i data-lucide="repeat" class="w-6 h-6 text-violet-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-violet-500/10 text-violet-400 border border-violet-500/20">MIT</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-violet-400 transition-colors">Recursive Language Models</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            General plug-and-play inference library for Recursive Language Models (RLM).
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Python</span>
+                            <span class="text-xs text-slate-500">LLM</span>
+                            <span class="text-xs text-slate-500">Inference</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Recursive-Language-Models-" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Global AI Content Impact -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="ai">
+                    <div class="absolute inset-0 bg-gradient-to-br from-fuchsia-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-fuchsia-500/10 flex items-center justify-center">
+                                <i data-lucide="globe" class="w-6 h-6 text-fuchsia-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-fuchsia-500/10 text-fuchsia-400 border border-fuchsia-500/20">Dashboard</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-fuchsia-400 transition-colors">Global AI Content Impact</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Analysis and interactive dashboard for Global AI Content Impact Dataset.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">AI Impact</span>
+                            <span class="text-xs text-slate-500">Analytics</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/Global-AI-Content-Impact-Analysis" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: AI Developer Performance -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="ai">
+                    <div class="absolute inset-0 bg-gradient-to-br from-lime-600/20 to-green-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-lime-500/10 flex items-center justify-center">
+                                <i data-lucide="user-cog" class="w-6 h-6 text-lime-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-lime-500/10 text-lime-400 border border-lime-500/20">Analysis</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-lime-400 transition-colors">AI Developer Performance</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Comprehensive analysis of AI Developer Performance data and productivity metrics.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">Performance</span>
+                            <span class="text-xs text-slate-500">Metrics</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/AI_Developer_Performance_Analysis" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: AI Financial Market -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 reveal" data-category="ai">
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-600/20 to-teal-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+                                <i data-lucide="trending-up" class="w-6 h-6 text-emerald-400"></i>
+                            </div>
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Finance</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">AI Financial Market Analysis</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Financial performance analysis of OpenAI, Google, and Meta using synthetic data.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-slate-500">FinTech</span>
+                            <span class="text-xs text-slate-500">Synthetic Data</span>
+                        </div>
+
+                        <a href="https://github.com/Ayyankhan101/AI-Financial-Market-Analysis" target="_blank" class="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- More Projects Link -->
+                <div class="project-card group relative rounded-2xl overflow-hidden bg-slate-800/50 border border-slate-700 border-dashed reveal" data-category="all">
+                    <div class="p-6 flex flex-col items-center justify-center h-full text-center min-h-[280px]">
+                        <div class="w-16 h-16 rounded-full bg-slate-700/50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i data-lucide="github" class="w-8 h-8 text-slate-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-400 mb-2">40+ More Projects</h3>
+                        <p class="text-slate-600 max-w-sm mb-4">Explore my complete portfolio on GitHub including data analysis, ML, and development projects.</p>
+                        <a href="https://github.com/Ayyankhan101?tab=repositories" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-all">
+                            <i data-lucide="external-link" class="w-4 h-4"></i> View All on GitHub
+                        </a>
                     </div>
                 </div>
             </div>
@@ -458,7 +1098,7 @@
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-slate-800/50 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
-        
+
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Work <span class="text-blue-500">Together</span></h2>
             <p class="text-slate-400 mb-12 max-w-2xl mx-auto">
@@ -470,19 +1110,19 @@
                     <i data-lucide="github" class="w-8 h-8 mx-auto mb-3 text-slate-400 group-hover:text-white transition-colors"></i>
                     <h3 class="font-semibold mb-1">GitHub</h3>
                     <p class="text-sm text-slate-500">@Ayyankhan101</p>
-                </a>
-                
+                </div>
+
                 <a href="mailto:your.email@example.com" class="p-6 rounded-2xl bg-slate-900 border border-slate-700 hover:border-purple-500/50 transition-all group">
                     <i data-lucide="mail" class="w-8 h-8 mx-auto mb-3 text-slate-400 group-hover:text-white transition-colors"></i>
                     <h3 class="font-semibold mb-1">Email</h3>
                     <p class="text-sm text-slate-500">Get in touch</p>
                 </a>
-                
+
                 <a href="#" class="p-6 rounded-2xl bg-slate-900 border border-slate-700 hover:border-pink-500/50 transition-all group">
                     <i data-lucide="linkedin" class="w-8 h-8 mx-auto mb-3 text-slate-400 group-hover:text-white transition-colors"></i>
                     <h3 class="font-semibold mb-1">LinkedIn</h3>
                     <p class="text-sm text-slate-500">Professional Profile</p>
-                </a>
+                </div>
             </div>
 
             <div class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-900 border border-slate-700 text-sm text-slate-400">
@@ -501,9 +1141,9 @@
                 </div>
                 <span class="font-semibold text-slate-300">Ayyan Khan</span>
             </div>
-            
+
             <p class="text-slate-500 text-sm">
-                © 2025 Built with passion & data. All rights reserved.
+                © 2026 Built with passion & data. All rights reserved.
             </p>
 
             <div class="flex gap-4">
@@ -527,7 +1167,7 @@
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
@@ -540,7 +1180,7 @@
         });
 
         // Typing Effect
-        const texts = ['Transforming data into insights...', 'Building weather analytics...', 'Python & Data Visualization...'];
+        const texts = ['Transforming data into insights...', 'Building ML pipelines...', 'Python, Rust & C++ Developer...', '52+ Projects on GitHub'];
         let textIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -548,7 +1188,7 @@
 
         function type() {
             const currentText = texts[textIndex];
-            
+
             if (isDeleting) {
                 typingElement.textContent = currentText.substring(0, charIndex - 1);
                 charIndex--;
@@ -574,6 +1214,38 @@
         // Start typing effect
         setTimeout(type, 1000);
 
+        // Filter Functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                // Filter projects
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter || (filter === 'data' && category === 'data')) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
         // Scroll Reveal Animation
         const observerOptions = {
             threshold: 0.1,
@@ -584,7 +1256,7 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
-                    
+
                     // Animate skill bars when visible
                     const skillBars = entry.target.querySelectorAll('.skill-fill');
                     skillBars.forEach(bar => {
@@ -602,7 +1274,7 @@
 
         window.addEventListener('scroll', () => {
             const currentScroll = window.pageYOffset;
-            
+
             if (currentScroll > 100) {
                 navbar.classList.add('shadow-lg');
                 navbar.classList.add('bg-slate-900/90');
@@ -610,7 +1282,7 @@
                 navbar.classList.remove('shadow-lg');
                 navbar.classList.remove('bg-slate-900/90');
             }
-            
+
             lastScroll = currentScroll;
         });
 
